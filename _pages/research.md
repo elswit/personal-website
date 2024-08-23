@@ -7,7 +7,7 @@ author_profile: true
 
 <br>
 <video muted autoplay loop width=700>
-    <source src="{{ site.my-media-path }}/images/research/smoke-flow.mp4" type="video/mp4">
+    <source src="/images/Smoke-flow-demo.mp4" type="video/mp4">
 </video>
 ---
 
