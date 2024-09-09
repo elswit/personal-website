@@ -17,11 +17,4 @@ To alleviate the large computational costs it is imperative to develop inexpensi
 A promising paradigm for nonlinear surrogate model construction is Scientific machine learning (SciML) that combines traditional machine learning approaches, leveraging existing data, with knowledge of the governing equations. Including first principles into ML models can significantly improve their results. However, current physics-informed surrogates suffer from several shortcomings:
 1. Even well-trained surrogate models do not automatically guarantee an accurate approximation of model derivatives, which are critical for many outer loop applications.
 2. Most surrogates do not quantify the uncertainty in their outputs. This is a necessity, as the quality of the surrogate predictions directly impacts the outer loop results.
-3. Surrogate models need to be retrained during outer-loop iterations to capture the physics as the operating point changes. One needs robust surrogates that remain accurate for a wide range of physical regimes
-
-## Projects
-
-
-### Physics-informed neural networks for PDE-constrained optimization and control
-
-* Design of open loop Physics-informed Neural-Network controllers by including the optimality conditions (Pontryagin's minimum principle equations) in the training loss of neural networks to create single-loop methods that solve forward and backward problems simultaneously for optimal state, control, and  adjoint trajectories. For more information read this project's publication [here](/Publication/CPINN).
+3. Surrogate models need to be retrained during outer-loop iterations to capture the physics as the operating point changes. One needs robust surrogates that remain accurate for a wide range of physical regimes.
