@@ -9,12 +9,23 @@ header:
 ---
 
 
+__Scientific machine learning__ (SciML) combines traditional scientific computing with modern machine learning techniques to solve complex problems in science and engineering. Its goal is to improve how we model, simulate, and predict natural and physical systems by integrating data-driven approaches with the traditional mathematical models used in scientific disciplines.
 
-Many scientific computing applications such as uncertainty quantification (UQ), inverse problems, and system optimization, are solved by outer loop algorithms that require repeated runs of forward simulations. The computational cost of each inner loop run is typically large, as forward simulations are complex physical models. At the same time, the number of forward runs required for an accurate outer loop solution is also large, either because of the number of outer optimization iterations, or the number of Monte-Carlo samples needed.
+### Key Aspects of Scientific Machine Learning:
 
-To alleviate the large computational costs it is imperative to develop inexpensive surrogate models that when called upon can replace the repeated runs of expensive physics-based models. Construction of accurate surrogates for complex models is challenging. Traditional model order reduction approaches are limited to approximating dynamics in a linear subspace. Nonlinear approximation approaches such as deep learning are needed to fully capture complex behavior , but conventional data-driven models perform poorly when training data is limited.
+1. **Combining Models with Data**:
+   - Traditionally, scientists have used mathematical models (i.e., equations) to describe how complex systems work. These models are based on physical laws or theoretical principles.
+   - Machine learning, on the other hand, uses data to find patterns and make predictions without relying on predefined relationships. *SciML* integrates these two approaches, using machine learning to improve or complement existing scientific models.
 
-A promising paradigm for nonlinear surrogate model construction is Scientific machine learning (SciML) that combines traditional machine learning approaches, leveraging existing data, with knowledge of the governing equations. Including first principles into ML models can significantly improve their results. However, current physics-informed surrogates suffer from several shortcomings:
-1. Even well-trained surrogate models do not automatically guarantee an accurate approximation of model derivatives, which are critical for many outer loop applications.
-2. Most surrogates do not quantify the uncertainty in their outputs. This is a necessity, as the quality of the surrogate predictions directly impacts the outer loop results.
-3. Surrogate models need to be retrained during outer-loop iterations to capture the physics as the operating point changes. One needs robust surrogates that remain accurate for a wide range of physical regimes.
+2. **Addressing Uncertainty**:
+   - In scientific problems, uncertainty estimation is a significant challenge. We often don’t know all the inner workings of complex systems or if the data we gathered is flawed. SciML provides mechanisms to manage this uncertainty better, helping to make more reliable predictions and simulations even when the data is noisy.
+
+3. **Learning New Patterns**:
+   - In some cases, scientists might not have an existing model for a problem. SciML can help discover new patterns in the data and suggest possible underlying principles, which can lead to new scientific insights.
+
+### Some Real-World Examples of SciML:
+
+- **Physics**: In fluid dynamics, which studies how gases and liquids flow, SciML is used to improve predictions about how air moves around objects like airplane wings, helping engineers design better planes.
+- **Climate Science**: Machine learning is used alongside physical modeling to make climate predictions faster and more accurate, helping to forecast extreme weather events more efficiently.
+- **Biology**: SciML helps researchers predict how diseases spread by learning from both biological models and real-world observations, improving the design of interventions or treatments.
+

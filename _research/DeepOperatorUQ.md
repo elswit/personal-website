@@ -1,11 +1,11 @@
 ---
 title: "DeepONet UQ"
 layout: single-portfolio
-excerpt: "<img src='/images/research/UQ.png' alt=''>"
+excerpt: "<img src='/images/research/UQ2.png' alt=''>"
 collection: research
 order_number: 2
 header:
-  og_image: "/images/research/UQ.png"
+  og_image: "/images/research/UQ2.png"
 ---
 
 # Uncertainty Quantification of Deep Learning Modelds using Operator Networks
